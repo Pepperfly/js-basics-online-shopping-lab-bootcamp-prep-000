@@ -49,10 +49,27 @@ function removeFromCart(item) {
   for (let i = 0; i < cart.length; i++) {
     if (cart[i].itemName === item) {
       cart.splice(i, 1);
+<<<<<<< HEAD
       return cart;
     }
   }
   return 'That item is not in your cart.';
+=======
+    }
+  }
+  return cart;
+//    try using a different kind of loop; if item not found in loop, then
+//    return 'That item is not in your cart.';
+
+/*
+  do {
+    if (cart[i].itemName === item) {
+      cart.splice(i, 1);
+      i++;
+  } while (i < cart.length);
+*/
+
+>>>>>>> bb019f565a661729300ba32c3cc4fcbe870ed36a
 }
 
 function placeOrder(cardNumber) {
